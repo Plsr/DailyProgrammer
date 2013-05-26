@@ -12,6 +12,8 @@
 		global $sorted;
 		for($i = 0; $i < sizeof($unsorted); $i++){
 			for($j = 0; $j < sizeof($sorted); $j++){
+				//This does not apply if the param to be sorted in is bigger than the last param of $sorted. Needs a fix.
+				//It's 1 a.m. now, I am so not doing this right now.
 				if($unsorted[$i] > $sorted[$j] && $unsorted[$i] < $sorted[$j+1]){
 					shift($sorted[$j], $j);
 					$sorted[$j] = $unsorted[$i];
