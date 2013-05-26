@@ -1,0 +1,5 @@
+Things I learned during this exercise:
+
+str_split - splits a string into an array
+array_sum - sums up all values in the array
+global - used to modify variables outside of a function
